@@ -7,6 +7,8 @@ print ("Je begint met 50 health en geen wapens")
 print ("Om meer health te krijgen kan je appels vinden en opeten")
 print ("Maar pas op want als je een verkeerde appel eet dan gaat er health af")
 print ("        ")
+GoedeAppel = str(20)
+SlechteAppel = str(10)
 EerstePadKiezen = input("je komt op een splitsing van 2 paden welke kant ga je op links of rechts? ")
 if EerstePadKiezen == "links":
     print ("Je bent het linker pad ingegaan.")
@@ -39,10 +41,23 @@ if EerstePadKiezen == "links":
         print ("De wolf heeft je 1 keer gebeten voordat je hem met je zakmes stak.")
         print ("Je totale health is met 10 afgenomen.")
         print ("Totale health 60.")
+        TotalHealth = str(60)
     elif Health >= "70" and ZakMes == "niet gekregen":
         print ("De wolf heeft je aan gevallen en heeft je 2 keer gebeten voordat hij wegrende.")
         print ("Je totale Health 50.")
-    
-        
-
-    
+        TotalHealth = str(50)
+    elif Health <= "50" and ZakMes == "gekregen":
+        print ("De wolf heeft je 1 keer gebeten voordat je hem met je zakmes stak.")
+        print ("Je totale health 40")
+        TotalHealth = str(40)
+    elif Health <= "50" and ZakMes == "niet gekregen":
+        print ("De wolf heeft je 2 keer gebeten voordat hij wegrende.")
+        print ("Je totale health 30.")
+        TotalHealth = str(30)
+    print ("    ")
+    print ("Je loopt verder")
+    HealthNaAppel = 'TotalHealth + GoedeAppel'
+    AppelEtenKeuze = input("Je ziet weer een appel liggen eet je hem op ja of nee? ")
+    if AppelEtenKeuze == ("ja"):
+        print ("Je hebt de appel opgegeten.")
+        print ("Totale Health " + HealthNaAppel )
