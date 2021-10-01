@@ -13,7 +13,25 @@ if EerstePadKiezen == "links":
     print ("        ")
     AppelEten = input("Je ziet een appel onder een boom liggen, ga je hem opeten ja of nee? ")
     if AppelEten == "ja":
+        Health = 70
         print ("Je hebt de appel gegeten je hebt nu 20 health erbij gekregen")
         print ("Totale health 70")
     else:
+        Health = 50
         print ("Je hebt de appel niet gegeten je health blijft 50")
+    print ("    ")
+    print ("Je loopt verder")
+    KleinHutje = input("Je ziet een klein hutje kijk erin of loop verder? ")
+    if KleinHutje == "kijk erin":
+        print ("Je gaat naar binnen. ")
+        print ("Je bent binnen en ziet een klein zakmes liggen deze neem je mee.")
+        print ("Je gaat weer naar buiten")
+        print ("    ")
+        print ("Je loopt verder ")
+    else:
+        print ("    ")
+        print ("Je gaat niet naar binnen en loopt verder ")
+    print ("        ")
+    print ("Je ziet een wolf en hij valt je aan.")
+
+    
